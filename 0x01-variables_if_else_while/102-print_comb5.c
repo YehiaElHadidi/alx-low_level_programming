@@ -20,7 +20,7 @@ int main(void)
 			for (z = i; z <= 57; z++)
 			{
 				for (k = j + 1; k <= 57; k++)
-				{	
+				{
 					putchar(i);
 					putchar(j);
 					putchar(' ');
