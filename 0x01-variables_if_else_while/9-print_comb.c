@@ -16,10 +16,11 @@ int main(void)
 	for (i = 48; i <= 56; i++)
 	{
 		putchar(i);
-		putchar(',');
-		putchar(' ');
+		if (i == 56){
+			putchar(',');
+			putchar(' ');
+		}
 	}
-	putchar('9');
 	putchar('\n');
 	return (0);
 }
