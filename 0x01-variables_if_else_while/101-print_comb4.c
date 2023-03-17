@@ -18,13 +18,15 @@ int main(void)
 		for (j = i + 1; j <= 57; j++)
 		{
 			for (z = j + 1; z <= 57; z++)
-			putchar(i);
-			putchar(j);
-			putchar(z);
-			if (!(i == 55 && j == 56 && z == 57))
 			{
-				putchar(',');
-				putchar(' ');
+				putchar(i);
+				putchar(j);
+				putchar(z);
+				if (!(i == 55 && j == 56 && z == 57))
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
 		}
 	}
