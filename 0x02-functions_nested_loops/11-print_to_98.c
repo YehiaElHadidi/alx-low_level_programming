@@ -21,7 +21,7 @@ void print_to_98(int n)
 		flag = 1;
 	}
 	if (flag == 1)
-		n++;
+		n--;
 
 	for (i = n; i >= 98; i--)
 	{
