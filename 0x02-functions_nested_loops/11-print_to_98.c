@@ -9,7 +9,7 @@
 */
 void print_to_98(int n)
 {
-	int i;
+	int i, flag = 0;
 
 	for (i = n; i <= 98; i++)
 	{
@@ -18,7 +18,10 @@ void print_to_98(int n)
 			printf(", ");
 		}
 		printf("%d", i);
+		flag = 1;
 	}
+	if (flag == 1)
+		n++;
 
 	for (i = n; i >= 98; i--)
 	{
