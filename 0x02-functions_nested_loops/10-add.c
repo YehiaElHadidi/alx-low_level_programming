@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include"main.h"
 /**
- * add.c - takes two int parameter
+ * add - takes two int parameter
  * Description: prints alphabet in small letters
  *
  * @a : add a
