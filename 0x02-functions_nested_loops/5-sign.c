@@ -1,13 +1,13 @@
 #include<stdio.h>
 #include"main.h"
 /**
- * _isalpha - takes one int parameter
+ * print_sign - takes one int parameter
  * Description: prints alphabet in small letters
  *
  * @n : check n
  * Return: int Always
 */
-int _isalpha(int n)
+int print_sign(int n)
 {
 	if (n > 0)
 		return (1);
