@@ -8,7 +8,7 @@
 */
 void times_table(void)
 {
-	int i, j, sum, si, fi;
+	int i, j;
 
 	for (i = 0; i <= 9; i++)
 	{
@@ -24,7 +24,6 @@ void times_table(void)
 				_putchar(' ');
 				_putchar(',');
 			}
-			sum += i;
 		}
 		_putchar('\n');
 	}
