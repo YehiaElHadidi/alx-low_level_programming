@@ -15,17 +15,18 @@ void jack_bauer(void)
 		for (j = 0; j < 60; j++)
 		{
 		
-			si = i % 10;
-			fi = (i / 10) % 10;
+			si = (i % 10) + 48;
+			fi = ((i / 10) % 10) + 48;
 			
-			sj = j % 10;
-			fj = (j / 10) % 10;
+			sj = (j % 10) + 48;
+			fj = ((j / 10) % 10) + 48;
 
 			_putchar(fi);
 			_putchar(si);
 			_putchar(':');
 			_putchar(fj);
 			_putchar(sj);
+			_putchar('\n');
 		}
 	}
 }
