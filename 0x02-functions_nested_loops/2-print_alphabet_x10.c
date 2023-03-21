@@ -5,7 +5,7 @@
  * Description: prints alphabet in small letters
  * Return: void Always
 */
-void print_alphabet(void)
+void print_alphabet_x10(void)
 {
 	int i, j;
 
