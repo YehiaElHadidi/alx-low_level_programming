@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include"main.h"
 /**
- * print_alphabet - void parameters
+ * print_alphabet_x10 - void parameters
  * Description: prints alphabet in small letters
  * Return: void Always
 */
