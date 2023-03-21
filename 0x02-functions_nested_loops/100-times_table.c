@@ -21,9 +21,9 @@ void print_times_table(int n)
 			{
 				printf(", ");
 			}
-			if (i * j < 100)
+			if (i * j < 100 && j != 0)
 				printf(" ");
-			if (i * j < 10)
+			if (i * j < 10 && j != 0)
 				printf(" ");
 			printf("%d", i * j);
 		}
