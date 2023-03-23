@@ -1,28 +1,23 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * print_square - prints a square
- * @size: size of the square
-**/
+ * print_square - tests if input given is a digit
+ * Return: void
+ * @size: int
+ */
 
 void print_square(int size)
 {
 	int i, j;
 
-	if (size > 0)
+	for (i = 0; i < size; i++)
 	{
-		for (i = 0 ; i < size ; i++)
-		{
-			for (j = 0 ; j < size ; j++)
-			{
-				_putchar('#');
-			}
+		for (j = 0; j < size; j++)
+			_putchar('#');
 
-			_putchar('\n');
-		}
-	}
-	else
-	{
 		_putchar('\n');
 	}
+	if (size <= 0)
+		_putchar('\n');
 }
