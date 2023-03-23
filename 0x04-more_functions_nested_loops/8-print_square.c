@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * print_square - tests if input given is a digit
@@ -14,12 +15,12 @@ void print_square(int size)
 	{
 		for (j = 0; j < size; j++)
 		{
-			_putchar('#');
+			putchar('#');
 		}
-		_putchar('\n');
+		putchar('\n');
 	}
 	if (size <= 0)
 	{
-		_putchar('\n');
+		putchar('\n');
 	}
 }
