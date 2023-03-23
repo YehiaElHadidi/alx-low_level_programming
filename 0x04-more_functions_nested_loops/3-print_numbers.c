@@ -1,3 +1,5 @@
+#include "main.h"
+
 /**
  * print_numbers - tests if input given is a digit
  * Return: void
