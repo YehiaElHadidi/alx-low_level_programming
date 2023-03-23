@@ -12,7 +12,7 @@ void print_numbers(void)
 
 	for (i = 48; i < 48 + 10; i++)
 	{
-		if ((i - 48 == 2 && i - 48 == 4))
+		if (!(i - 48 == 2 && i - 48 == 4))
 			_putchar(i);
 	}
 	_putchar('\n');
