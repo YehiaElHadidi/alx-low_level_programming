@@ -8,7 +8,7 @@ void _puts(char *s)
 {
 	int cnt;
 
-	puts(s[cnt]);
+	puts(s);
 	puts("\n");
 
 }
