@@ -11,10 +11,9 @@ char *_strcpy(char *des, char *src)
 	int i, sz;
 
 	i = 0;
-	while (s[i] != '\0')
+	while (src[i] != '\0')
 		i++;
 	sz = i;
-
 	for (i = 0; i <= sz; i++)
 	{
 		des[i] = src[i];
