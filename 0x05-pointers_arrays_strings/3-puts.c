@@ -8,8 +8,6 @@
  */
 void _puts(char *s)
 {
-	int cnt;
-
 	puts(s);
 	puts("\n");
 
