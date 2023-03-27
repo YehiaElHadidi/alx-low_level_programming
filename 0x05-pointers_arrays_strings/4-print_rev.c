@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <string.h>
-#include "main.h"
 /**
  * print_rev - updates the value of a pointer to 98
  * @s: a pointer
@@ -9,15 +8,15 @@
  */
 void print_rev(char *s)
 {
-	int i, cnt;
+	int i;
 
-	cnt = 0;
-	while (s[cnt] != '\0')
-		cnt++;
+	i = 0;
+	while (s[i] != '\0')
+		i++;
 
-	for (i = cnt; i >= 0; i--)
+	for (i = i - 1; i >= 0; i--)
 	{
-		_putchar(s[i]);
+		putchar(s[i]);
 	}
-	_putchar('\n');
+	putchar('\n');
 }
