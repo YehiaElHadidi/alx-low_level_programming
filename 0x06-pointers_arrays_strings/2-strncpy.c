@@ -25,5 +25,11 @@ char *_strncpy(char *des, char *src, int n)
 	for (k = 0; k < j && k < n; k++)
 		des[k] = src[k];
 
+	while (k < n)
+	{
+		dest[k] = '\0';
+		k++;
+	}
+
 	return (des);
 }
