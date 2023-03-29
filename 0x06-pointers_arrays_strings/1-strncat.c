@@ -23,6 +23,7 @@ char *_strncat(char *des, char *src, int n)
 	sz += j;
 
 	for (k = 0; k < j && k < n; k++)
-		temp[k + i] = src[k];
+		des[k + i] = src[k];
+	return (des);
 
 }

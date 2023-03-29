@@ -2,12 +2,13 @@
 #include <string.h>
 #include <stdlib.h>
 /**
- * _strcat - updates the value of a pointer to 98
+ * _strncpy - updates the value of a pointer to 98
  * @des: a pointer
  * @src: ss
+ * @n: sss
  * Return: char * ALWAYS
  */
-char *_strcat(char *des, char *src)
+char *_strncpy(char *des, char *src, int n)
 {
 	int i, sz, j, k;
 
@@ -21,7 +22,8 @@ char *_strcat(char *des, char *src)
 		j++;
 	sz += j;
 
-	for (k = 0; k < j; k++)
-		temp[k + i] = src[k];
+	for (k = 0; k < j && k < n; k++)
+		des[k] = src[k];
+
 	return (des);
 }
