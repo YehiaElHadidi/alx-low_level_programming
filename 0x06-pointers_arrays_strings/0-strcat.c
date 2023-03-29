@@ -9,7 +9,7 @@
  */
 char *_strcat(char *des, char *src)
 {
-	int i, sz, j, k;
+	int i, j, k;
 
 	i = 0;
 	while (des[i] != '\0')
@@ -19,9 +19,9 @@ char *_strcat(char *des, char *src)
 	j = 0;
 	while (src[j] != '\0')
 		j++;
-	sz += j;
 
 	for (k = 0; k < j; k++)
 		temp[k + i] = src[k];
+	
 	return (des);
 }
