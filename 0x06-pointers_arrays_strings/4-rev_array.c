@@ -6,17 +6,17 @@
  * @a: a pointer
  * @n: ss
  *
- *
+ * Return: sss
  */
 void reverse_array(int *a, int n)
 {
-	int i, temp;
+	int i, temp, sz;
 
-	n -= 1;
-	for (i = 0; i <= n / 2; i++)
+	sz = n - 1;
+	for (i = 0; i <= sz / 2; i++)
 	{
-		temp = a[n - i];
-		a[n - i] = a[i];
+		temp = a[sz - i];
+		a[sz - i] = a[i];
 		a[i] = temp;
 	}
 }
