@@ -18,7 +18,8 @@ char *cap_string(char *s)
 		i++;
 	sz = i - 1;
 
-
+	if (i > 0)
+		s[0] = toupper(s[0]);
 	for (i = 1; i <= sz; i++)
 	{
 		if (s[i - 1] == ' ' || s[i - 1] == ';'
