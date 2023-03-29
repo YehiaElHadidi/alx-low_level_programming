@@ -10,19 +10,9 @@
  */
 char *_strncpy(char *des, char *src, int n)
 {
-	int i, sz, j, k;
-
-	i = 0;
-	while (des[i] != '\0')
-		i++;
-	sz = i - 1;
-
-	j = 0;
-	while (src[j] != '\0')
-		j++;
-	sz += j;
-
-	for (k = 0; k < j && k < n; k++)
+	int k;
+	
+	for (k = 0; src[k] != '\0' && k < n; k++)
 		des[k] = src[k];
 
 	while (k < n)
