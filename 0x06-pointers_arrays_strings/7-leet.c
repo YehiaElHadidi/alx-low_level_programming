@@ -23,11 +23,12 @@ char *leet(char *s)
 		s[0] = toupper(s[0]);
 	for (i = 0; i <= sz; i++)
 	{
-		if (toupper(s[i]) == 'A' || toupper(s[i]) == 'T' || toupper(s[i]) == 'O' || toupper(s[i]) == 'E' || toupper(s[i]) == 'L')
+		if (toupper(s[i]) == 'A' || toupper(s[i]) == 'T' || toupper(s[i]) == 'O'
+			|| toupper(s[i]) == 'E' || toupper(s[i]) == 'L')
 		{
 			s[i] = alp[toupper(s[i]) - 'A'];
 		}
-		
+
 	}
 
 	return (s);
