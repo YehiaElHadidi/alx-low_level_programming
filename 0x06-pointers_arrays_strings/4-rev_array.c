@@ -6,7 +6,7 @@
  * @a: a pointer
  * @n: ss
  *
- * Return: int ALWAYS
+ * Return: void ALWAYS
  */
 void reverse_array(int *a, int n)
 {
