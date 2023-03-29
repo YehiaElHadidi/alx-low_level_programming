@@ -19,8 +19,6 @@ char *leet(char *s)
 		i++;
 	sz = i - 1;
 
-	if (i > 0)
-		s[0] = toupper(s[0]);
 	for (i = 0; i <= sz; i++)
 	{
 		if (toupper(s[i]) == 'A' || toupper(s[i]) == 'T' || toupper(s[i]) == 'O'
