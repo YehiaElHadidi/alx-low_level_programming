@@ -11,7 +11,7 @@
  */
 char *cap_string(char *s)
 {
-	int i, sz, j, k;
+	int i, sz;
 
 	i = 0;
 	while (s[i] != '\0')
