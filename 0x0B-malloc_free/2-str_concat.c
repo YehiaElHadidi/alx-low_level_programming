@@ -25,10 +25,12 @@ char *str_concat(char *s1, char *s2)
 	ptr = ((char *)malloc((size1 + size2 + 1) * sizeof(char)));
 	if (ptr == NULL)
 		return (NULL);
-	for (i = 0; i < (int)size1; i++)
-		ptr[i] = s1[i];
+	if (s1 != NULL)
+		for (i = 0; i < (int)size1; i++)
+			ptr[i] = s1[i];
 
-	for (i = 0; i <= size2; i++)
-		ptr[i + size1] = s2[i];
+	if (s2 != NULL)
+		for (i = 0; i <= size2; i++)
+			ptr[i + size1] = s2[i];
 	return (ptr);
 }
