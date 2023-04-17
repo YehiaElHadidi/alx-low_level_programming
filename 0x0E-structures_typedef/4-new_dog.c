@@ -9,6 +9,7 @@
  * @age: Second member
  * @owner: Third member
  *
+ * Return: the length of the string
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
