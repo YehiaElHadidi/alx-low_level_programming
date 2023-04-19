@@ -10,7 +10,7 @@ void array_iterator(int *array, size_t size, void (*action)(int))
 {
 	size_t i;
 
-	if (!name || !action)
+	if (!name || size == 0 || !action)
 		return;
 	for (i = 0; i < size; i++)
 	{
