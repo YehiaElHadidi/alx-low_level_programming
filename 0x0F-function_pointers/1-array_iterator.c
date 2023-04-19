@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <stdio.h>
 /**
  * array_iterator - prints a name using another function
  * @array: name to print
